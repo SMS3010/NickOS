@@ -1,0 +1,397 @@
+# include<iostream.h>
+#include <conio.h>
+
+
+
+void main()
+{
+clrscr();
+
+//--------------------------------------------------------------------------------------------
+for(int startup=0 ; startup<3000000 ; startup++)
+  {
+   if(startup==0)
+      {
+	cout<<"\n\n\n\n\n\n WELCOME TO NICK OS ";
+      }
+
+   if(startup==1000000)
+      {
+	clrscr();
+	cout<<"\n\t       .__        __                    ";
+	cout<<"\n\t  ____ |__| ____ |  | __   ____  ______ ";
+	cout<<"\n\t /    \|  |/ ___\|  |/ /  /  _ \/  ___/ ";
+	cout<<"\n\t|   |  \  \  \___|    <  (  <_> )___ \  ";
+	cout<<"\n\t|___|  /__|\___  >__|_ \  \____/____  > ";
+	cout<<"\n\t     \/        \/     \/            \/  ";
+	cout<<"\n\t                                                                          ";
+      }
+
+   if(startup==2000000)
+      {
+	clrscr();
+	cout<<"\n\t                    ____     ____  ";
+	cout<<"\n\t ___  __ __________/_   |   /_   | ";
+	cout<<"\n\t \  \/ // __ \_  __ \   |    |   | ";
+	cout<<"\n\t  \   /\  ___/|  | \/   |    |   | ";
+	cout<<"\n\t   \_/  \___  >__|  |___| /\ |___| ";
+	cout<<"\n\t            \/            \/       ";
+	cout<<"\n\t                                                                          ";
+      }
+
+  }
+
+//--------------------------------------------------------------------------------------------------
+//passcode lock
+
+clrscr();
+int passcode;
+cout<<"\n\n\n\nEnter the password to proceed...";
+cin>>passcode;
+  if(passcode!=123)
+     {
+	cout<<"\n\n\nYou have entered wrong passcode !!!";
+	exit;
+     }
+
+//---------------------------------------------------------------------------------------------------
+
+
+
+	clrscr();
+	cout<<"\n\n\n\n\t\t\tWELCOME TO THE HOME SCREEN ";
+
+
+cout<<"\n\n\t\t APPS:-                   CODE \n\n\n\n "; 
+  
+cout<<"\n\n\t\t picture or wallpapers      1    ";    
+cout<<"\n\n\t\t contacts		   2	";
+cout<<"\n\n\t\t news n weather             3	";
+cout<<"\n\n\t\t calender                   4	";
+cout<<"\n\n\t\t music player               5	";
+cout<<"\n\n\t\t bses bill generator        6	";
+cout<<"\n\n\t\t feets to inches convertor  7	";
+cout<<"\n\n\t\t dollar to rupees           8	";
+cout<<"\n\n\t\t notes                      9	";
+cout<<"\n\n\t\t memo                       10	";
+cout<<"\n\n\t\t timer                      11	";
+cout<<"\n\n\t\t clock                      12	";
+cout<<"\n\n\t\t stopwwatch                 13	";
+cout<<"\n\n\t\t Calculator                 14	";
+cout<<"\n\n\t\t video maker                15	";
+cout<<"\n\n\t\t passcode lock              16	";
+cout<<"\n\n\t\t metro fare calculator      17	";
+cout<<"\n\n\t\t area calculator		   18   ";
+cout<<"\n\n\t\t data analyszer             19   ";
+cout<<"\n\n\t\t scientific calculator      20   ";
+
+cout<<"\n\n\t\tEnter your choice of app....(i.e.enter the code) ";
+short int code;
+cin>>code;
+   
+
+	//---------------------------------------------------------------------------------------------
+	//BSES bill generator...
+if(code==6)
+   {
+	clrscr();
+	cout<<"  \n \n \t \t BSES ELECTRICAL BILL GENERATOR ";
+	float bses_u;
+	cout<<" \n \n Enter the no. of units  ";
+	cin>>bses_u;
+	if((bses_u>0)&&(bses_u<100))
+	{
+	cout<<" \n \n charge of 1 unit is 20p";
+	cout<<" \n \n total bill  ";
+	cout<<0.2*bses_u+50;
+	}
+	if((bses_u>100)&&(bses_u<300))
+	{
+	cout<<" \n \n charge of 1 unit is 50p";
+	cout<<" \n \n total bill  ";
+	cout<<0.5*bses_u+50;
+	}
+	if((u>300))
+	{
+	cout<<" \n \n charge of 1 unit is 80p";
+	cout<<" \n \n \n total bill   ";
+	cout<<0.8*bses_u+50;
+	}
+	break();
+   }
+
+
+	//------------------------------------------------------------------------------------------------
+	//feets to inches converter
+if(code==7)
+   {	
+	struct distance
+	{
+	 int feet;
+	 int inches;
+	};
+	distance sum(distance d1, distance d2);
+	{
+	clrscr();
+	distance d1,d2,d4;
+	cout<<" \n \n enter d1 for feet";
+	cin>>d1.feet;
+	cout<<" \n \n enter d1 for inches ";
+	cin>>d1.inches;
+	cout<<" \n \n enter d2 for feet ";
+	cin>>d2.feet;
+	cout<<" \n \n enter d2 for inches ";
+	cin>>d2.inches;		
+	d4=sum(d1,d2)	;
+	cout<<" \n \n 	back to main ";
+	cout<<" \n \n 	d1 is ";
+	cout<<d1.feet<<" \t "<<d1.inches;
+	cout<<" \n \n d2 is  ";
+	cout<<d2.feet<<" \t "<<d2.inches;
+	cout<<" \n \n d1+d2 is  ";
+	cout<<d4.feet<<"\t "<<d4.inches;
+	break();
+	 }
+	
+
+	distance sum(distance d1,distance d2)
+	 {
+	 distance d3;
+	 d3.feet=d1.feet+d2.feet;
+	 d3.inches=d1.inches+d2.inches;
+	 cout<<" \n d1";
+	 cout<<" \n \n ";
+	 cout<<d1.feet<<" \t "<<d1.inches;
+	 cout<<" \n d2";
+	 cout<<" \n \n ";
+	 cout<<d2.feet<<" \t "<<d2.inches;
+	 cout<<"\n d3";
+	 return(d3);
+	 }
+   }
+
+	//--------------------------------------------------------------------------------------------------
+	//Metro fare calculator
+if(code==1)
+   {
+	clrscr();
+	int a,b,c,tfare;
+	cout<<"\n\n\n\t\t\tWELCOME TO DELHI METRO";
+	cout<<"\n\n\nfares are as follows:\n\nage above 18\t\tRs. 5\nage b/w 5 to 18\t\tRs. 3\nage below 5\t\tFREE";
+	cout<<"\n\nenter the the number of passengers above 18 years of age";
+	cin>>a;
+`	cout<<"\n\nenter the the number of passengers above 5 but less than 18 years of age";
+	cin>>b;
+	cout<<"\n\nenter the the number of passengers below 5 years of age";
+	cin>>c;
+	cout<<"\n\n\n\nyour total fare will be ";
+	tfare=(5*a)+(3*b);
+	cout<<tfare;
+   }
+
+
+	//---------------------------------------------------------------------------------------------------
+	//notes
+if(code==9)
+   {
+	{
+	cout<<"\n\n\n\n\t\t\tWELCOME TO NOTES ";
+	cout<<"\n\n\nstart entering your notes----press enter to terminate (max.255 chars) ";
+	char notes[256];
+	cin.getline(notes,256);
+	break();
+	}
+   }	
+
+
+	//----------------------------------------------------------------------------------------------------
+	// Area Calculator
+if(code==18)
+   {
+	clrscr();
+	cout<<"\n\n\n\t\tWelcome to Area calculater";
+	char ch;
+	int i=1;
+	int r,a,b,c,area,j;
+	cout<<"\n For area of circle                 press c";
+	cout<<"\n For area of rectangle              press r";
+	cout<<"\n For area of a square               press s";
+	cout<<"\n enter the times you want the program to run";
+	cin>>j;
+	for(i=1;i<=j;i++)
+	{
+	cout<<"\n enter the figure";
+	cin>>ch;
+	 if((ch=='c')||(ch=='C'))
+	 {
+	 cout<<"\n enter the radius";
+	 cin>>r;
+	 area=3.14*sqrt(r);
+	 cout<<"\n area is";
+	 cout<<area;
+	 }
+	
+	if((ch=='s')||(ch=='S'))
+	{
+	cout<<"\n enter side of the square";
+	cin>>a;
+	area=(a*a);
+	cout<<area;
+	}
+	if((ch=='r')||(ch=='R'))
+	{
+	cout<<"\n enter the length";
+	cin>>b;
+	cout<<"\n enter the breadth";
+	cin>>c;
+	area=(b*c);
+	cout<<"area is";
+	cout<<area;
+	}
+		
+	cout<<"	\n thank you";
+	}
+
+   }
+
+
+
+	//---------------------------------------------------------------------------------------------------------
+	//basic + scientific calculator(+,-,*,/)
+
+if (code==20||code==14)
+   {
+	clrscr();
+	float first,second;
+	int calc_r; 
+	cout<<"\n\n\nenter the first number ";
+	cin>>first;
+	cout<<"\n\n\n\nwhich operaion do you want to perform ?";
+	cout<<"\n\n   addition............1";
+	cout<<"\n\n   multiplication......2";
+	cout<<"\n\n   subtraction.........3";
+	cout<<"\n\n   division............4";
+	cout<<"\n\n   exponential.........5";
+	cout<<"\n\n   square root.........6";
+	cout<<"\n\n   sine (sin)..........7";
+	cout<<"\n\n   cosine (cos)........8";
+	cout<<"\n\n   tangent (tan).......9";
+	cout<<"\n\n   logarithm (log).....10";
+	cout<<"\n\n\n\n\t enter your choice";
+	cin>>calc_r;
+	
+	if (clac_r==1)
+	{
+	cout<<"\n\n\n\t\tyou have opted for addition";
+	cout<<"\n\n\nenter the second number ";
+	cin>>second;	
+	cout<<" \n the sum of the numbers is   ";
+	cout<<(first + second);
+	}
+
+	if (clac_r==2)
+	{
+	cout<<"\n\n\n\t\tyou have opted for multipliion";
+	cout<<"\n\n\nenter the second number ";
+	cin>>second;
+	cout<<" \n the product of the numbers is   ";
+	cout<<(first * second);
+	}
+	
+	if (clac_r==3)
+	{
+	cout<<"\n\n\n\t\tyou have opted for subtraction";
+	cout<<"\n\n\nenter the second number ";
+	cin>>second;
+	cout<<" \n the difference of the numbers is   ";
+	cout<<(first - second);
+	}
+	
+	if (clac_r==4)
+	{
+	cout<<"\n\n\n\t\tyou have opted for division";
+	cout<<"\n\n\nenter the second number ";
+	cin>>second;
+	cout<<" \n the ratio of the numbers is   ";
+	cout<<(first / second);
+	}
+	
+	if (clac_r==5)
+	{
+	cout<<"\n\n\n\t\tyou have opted for exponential power";
+	cout<<"\n\n\nenter the second number ";
+	cin>>second;
+	cout<<" \n the result of the numbers is   ";
+	cout<<pow(first,second);
+	}
+	
+	if (clac_r==6)
+	{
+	cout<<"\n\n\n\t\tyou have opted for square root";
+	cout<<" \n the square root of the numbers is   ";
+	cout<<cos(first);
+	}
+	
+	if (clac_r==7)
+	{
+	cout<<"\n\n\n\t\tyou have opted for square root";
+	cout<<" \n the sine of the numbers is   ";
+	cout<<sqrt(first);
+	}
+		
+	if (clac_r==8)
+	{
+	cout<<"\n\n\n\t\tyou have opted for square root";
+	cout<<" \n the cosine of the numbers is   ";
+	cout<<sin(first);
+	}
+	
+	if (clac_r==9)
+	{
+	cout<<"\n\n\n\t\tyou have opted for square root";
+	cout<<" \n the tangent of the numbers is   ";
+	cout<<tan(first);
+	}
+	
+	if (clac_r==10)
+	{
+	cout<<"\n\n\n\t\tyou have opted for square root";
+	cout<<" \n the logarithm of the numbers is   ";
+	cout<<log(first);
+	}
+	break();
+   }
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------NOTES--------------
+
+//http://patorjk.com/software/taag/#p=display&f=Graffiti&t=ver1.1
+
+//picture or wallpapers      1  @    
+//contacts		     2	@
+//news n weather             3	@
+//calender                   4	@
+//music player               5	@
+//bses bill generator        6	#
+//feets to inches convertor  7	#
+//dollar to rupees           8	@
+//notes                      9	#
+//memo                       10	@
+//timer                      11	@
+//clock                      12	@
+//stopwwatch                 13	@
+//Calculator                 14	@
+//video maker                15	@
+//passcode lock              16	#	
+//metro fare calculator      17	#
+//area calculator            18 #
+//data analyszer             19 @
+//scientific calculator      20 #
+------------------------------------------LAST UPDATE------------05_02_2013-03:11-----------
