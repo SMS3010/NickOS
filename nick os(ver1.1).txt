@@ -1,3 +1,12 @@
+% 
+% >>> Nikhil Pandita © 2012
+%  >>> St. Mary's School, Delhi
+%   >>> ./NickOs/X11/MAIN.c
+% >>> 1-Fork
+% >>>> 2-Test
+% >>>>> 3-Pull
+%
+
 # include<iostream.h>
 #include <conio.h>
 
